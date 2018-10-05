@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gespanet.com.subscriptionreminder.AddRow">
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:id="@+id/AddRowLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Insert FreeTrial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:text="Add"
+        android:layout_below="@+id/add_nextsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:layout_below="@+id/AddRowLabel"
+        android:hint="name... (EX: Spotify)"
+        android:id="@+id/add_name"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="website name (EX: www.spotify.com)"
+        android:id="@+id/add_weblink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_name"/>
+
+    <EditText
+        android:hint="Start Date? (EX: YYYY-MM-dd)"
+        android:id="@+id/add_recentsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:inputType="date"
+        android:layout_below="@+id/add_weblink"/>
+
+    <EditText
+        android:hint="Next Billing Date? (EX: YYYY-MM-dd)"
+        android:id="@+id/add_nextsub"
+        android:clickable="true"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_recentsub"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/subNameRowId"
+        android:layout_marginLeft="8dp"
+        android:text="Spotify"
+        android:textColor="#000"
+        android:textSize="21sp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/subTimeLeftRowId"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/subNameRowId"
+        android:text="5 days left"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/sub_removeId"
+        android:background="@drawable/remove_button"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+
+
+
+</RelativeLayout>

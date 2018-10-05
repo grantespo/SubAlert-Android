@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gespanet.com.subscriptionreminder.MainActivity"
+    android:background="#e6e6e6">
+
+    <TextView
+        android:id="@+id/privacyPolicyId"
+        android:text="Privacy Policy"
+        android:textColor="#2755e1"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="#000"
+        android:id="@+id/freetiallabelid"
+        android:text="Free-Trials"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/freetiral_add_buttonId"
+        android:background="@drawable/add_button"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="45dp" />
+
+    <ListView
+        android:id="@+id/freetrialListView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/freetiral_add_buttonId"
+        android:layout_above="@+id/sublabelid"
+        >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/sublabelid"
+        android:text="Subscriptions"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/sub_addButtonId"
+        android:background="@drawable/add_button"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_height="45dp" />
+
+    <ListView
+        android:id="@+id/sublistview"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sub_addButtonId">
+
+    </ListView>
+
+
+</RelativeLayout>
